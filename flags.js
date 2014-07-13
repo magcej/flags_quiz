@@ -55,6 +55,18 @@ var flags = [
 
 $(function() {
 
- $("#flag").attr("src", "flags/wegry.png");
+   // Wylosuj kraj
+   var flagnum = Math.floor(Math.random()*flags.length);
+   var amount = flags.length;
+   var chosenflag = flags[flagnum];
+
+
+   // Podmienić flagę na wylosowaną
+   $("#flag").attr("src", "flags/" + chosenflag.file);
+
+   // Wylosować trzy (dwa) inne kraje
+
+
+
 
 });
